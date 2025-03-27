@@ -1,5 +1,6 @@
 import { petlist } from "../js/functions.js";
 import { mostrarMascota } from "../js/functions.js";
+import { buscarMascota } from "../js/functions.js";
 
 while (true) {
     
@@ -20,6 +21,9 @@ while (true) {
             break
         case "2":
             mostrarMascota()
+            break
+        case "3":
+            buscarMascota()
             break
         default:
             alert('Ingresa una opción valida')

@@ -38,6 +38,24 @@ export function mostrarMascota() {
     });
 
     alert(mensaje);
+}
 
 
+export function buscarMascota() {
+    let searchName = prompt("Ingresa el nombre de la qmascota que quieras buscar:");
+
+    let findPet = pets.find(mascota => mascota.nombre.toLowerCase() === searchName.toLocaleLowerCase());
+
+    if (findPet){
+        alert(`Mascota Encontrada:\n
+Nombre: ${mascotaEncontrada.Nombre}
+Especie: ${mascotaEncontrada.Especie}
+Edad: ${mascotaEncontrada.Edad} años
+Peso: ${mascotaEncontrada.Peso} kg
+Estado de Salud: ${mascotaEncontrada["Estado de salud"]}`);
+    }
+
+    else{
+        alert("El nombre de la mascota que ingresaste no coincide con ninguna de las que se encuentran en el sistema")
+    }
 }
