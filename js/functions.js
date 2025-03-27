@@ -48,11 +48,11 @@ export function buscarMascota() {
 
     if (findPet){
         alert(`Mascota Encontrada:\n
-Nombre: ${mascotaEncontrada.Nombre}
-Especie: ${mascotaEncontrada.Especie}
-Edad: ${mascotaEncontrada.Edad} años
-Peso: ${mascotaEncontrada.Peso} kg
-Estado de Salud: ${mascotaEncontrada["Estado de salud"]}`);
+Nombre: ${findPet.Nombre}
+Especie: ${findPet.Especie}
+Edad: ${findPet.Edad} años
+Peso: ${findPet.Peso} kg
+Estado de Salud: ${findPet["Estado de salud"]}`);
     }
 
     else{
